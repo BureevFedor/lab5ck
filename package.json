@@ -1,0 +1,42 @@
+{
+	"name": "ftext",
+	"description": "text convertor plugin",
+	"version": "0.0.1",
+	"publisher": "Fedor Bureev",
+	"repository": "https://github.com/BureevFedor/lab5ck",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.ftext.showinfo",
+				"title": "ftext-show-info"
+			},
+			{
+				"command": "extension.ftext.hideinfo",
+				"title": "ftext-hide-info"
+			},
+			{
+				"command": "extension.ftext.reverse",
+				"title": "ftext-reverse"
+			},
+			{
+				"command": "extension.ftext.uppercase",
+				"title": "ftext-uppercase"
+			},
+			{
+				"command": "extension.ftext.lowercase",
+				"title": "ftext-lowercase"
+			}
+		]
+	},
+	"scripts": {},
+	"devDependencies": {
+		"@types/vscode": "^1.32.0"
+	}
+}
