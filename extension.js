@@ -26,7 +26,7 @@ function updateStatusBarItem()
 		let text = document.getText(selection);
 
 		if(text){
-			let lines_res = text.match(/\r\n/g);
+			let lines_res = text.match(/\n/g);
 			if(lines_res){
 				lines = lines_res.length;
 			}

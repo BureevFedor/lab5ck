@@ -1,6 +1,7 @@
 {
 	"name": "ftext",
 	"description": "text convertor plugin",
+	"icon": "icon.png",
 	"version": "0.0.1",
 	"publisher": "Fedor Bureev",
 	"repository": "https://github.com/BureevFedor/lab5ck",
@@ -8,7 +9,11 @@
 		"vscode": "^1.32.0"
 	},
 	"activationEvents": [
-		"*"
+		"onCommand:extension.ftext.showinfo",
+		"onCommand:extension.ftext.hideinfo",
+		"onCommand:extension.ftext.reverse",
+		"onCommand:extension.ftext.uppercase",
+		"onCommand:extension.ftext.lowercase"
 	],
 	"main": "./extension.js",
 	"contributes": {
